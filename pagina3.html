@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Personal de Derlis González</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pagina1.html">Perfil</a>
+    <a href="pagina2.html">Portafolio</a>
+    <a href="pagina3.html">Blog</a>
+    <a href="pagina4.html">Estadísticas</a>
+    <a href="pagina5.html">Contacto</a>
+  </nav>
+  <section class="blog">
+    <h1>Blog Personal de Derlis González</h1>
+    
+    <!-- Sección 1: Carrera -->
+    <section class="seccion">
+      <h2>Mi Carrera Profesional</h2>
+      <div class="post">
+        <h3>Inicios en Paraguay</h3>
+        <img src="RÑ.jpeg" alt="Inicios de Derlis González">
+        <p>Derlis González comenzó su carrera futbolística en Paraguay, destacándose en la liga local con el Club Rubio Ñu...</p>
+        <a href="https://www.transfermarkt.com/derlis-gonzalez/profil/spieler/239154" class="leer-mas">Leer más</a>
+      </div>
+    </section>
+
+    <!-- Sección 2: Clubes -->
+    <section class="seccion">
+      <h2>Mis Clubes</h2>
+      <div class="post">
+        <h3>Olimpia</h3>
+        <img src="Olimpis.jpeg" alt="Club Olimpia">
+        <p>Después de su paso por el Club Rubio Ñu, Derlis González continuó su carrera en uno de los clubes más grandes de Paraguay, el Club Olimpia. Aquí, dejó una huella importante en el fútbol paraguayo...</p>
+        <a href="https://es.wikipedia.org/wiki/Club_Olimpia" class="leer-mas">Leer más</a>
+      </div>
+      <div class="post">
+        <h3>Santos FC</h3>
+        <img src="santos.jpeg" alt="Santos FC">
+        <p>Durante su tiempo en el club brasileño, el atacante paraguayo jugó como extremo, mostrando destellos de su habilidad y velocidad en el campo...</p>
+        <a href="https://www.transfermarkt.com/derlis-gonzalez/leistungsdaten/spieler/239154" class="leer-mas">Leer más</a>
+      </div>
+      
+    </section>
+
+    <!-- Sección 3: Competencias -->
+    <section class="seccion">
+      <h2>Mis Competencias Internacionales</h2>
+      <div class="post">
+        <h3>Último Paso: Selección Paraguaya</h3>
+        <img src="py.jpeg" alt="Selección Paraguaya">
+        <p>Derlis González ha sido una pieza clave en la selección de Paraguay, participando en importantes competencias internacionales...</p>
+        <a href="https://www.abc.com.py/deportes/futbol/derlis-gonzalez-seleccion-paraguay" class="leer-mas">Leer más</a>
+      </div>
+    </section>
+
+  </section>
+
+  <footer>
+    <p>Desarrollado por Anibal Britez - <span id="fecha"></span></p>
+  </footer>
+  <script>
+    const fechaElement = document.getElementById("fecha");
+    const fechaActual = new Date().toLocaleDateString('es-ES');
+    fechaElement.textContent = fechaActual;
+  </script>
+
+</body>
+</html>

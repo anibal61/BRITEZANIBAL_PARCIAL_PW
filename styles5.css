@@ -1,0 +1,154 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #f4f6f8; /* Fondo claro y suave */
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #1d3557; /* Azul oscuro, profesional */
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+nav a {
+  color: #f4a261; /* Color naranja vibrante */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover en enlaces del menú */
+nav a:hover {
+  color: #e63946; /* Rojo intenso al hacer hover */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Subrayado animado para enlaces */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #e63946;
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+  color: #1d3557;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  position: relative;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Animación para el título */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sección de contenido */
+.section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 5px solid #1d3557;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo para las imágenes */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Enlace "Leer más" */
+.leer-mas {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  font-size: 1.1em;
+}
+
+.leer-mas:hover {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+/* Botones */
+button {
+  background-color: #f4a261;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #e63946;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #1d3557;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}

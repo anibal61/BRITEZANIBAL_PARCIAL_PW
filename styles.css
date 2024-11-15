@@ -1,0 +1,134 @@
+/* Estilo general para el cuerpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5; /* Fondo claro */
+  color: #212121; /* Texto oscuro */
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #0038a8; /* Azul bandera */
+  padding: 15px;
+  text-align: center;
+  border-bottom: 4px solid greenyellow; /* Línea roja */
+}
+
+nav a {
+  color: #ffffff; /* Blanco bandera */
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover en los enlaces del menú */
+nav a:hover {
+  background-color: green; /* Rojo bandera */
+  transform: translateY(-3px); /* Eleva el enlace */
+  border-radius: 25px;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Estilo para el área principal */
+.main {
+  text-align: center;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid black; /* Borde rojo */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los botones */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.boton-animado {
+  text-align: center;
+  width: 200px;
+}
+
+/* Estilo de los botones */
+.boton {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #ffffff; /* Blanco */
+  background-color: gray; /* Azul bandera */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  width: 75%;
+}
+
+.boton:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  background-color: green; /* Rojo bandera */
+  color: black; /* Blanco texto */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Efecto al presionar el botón */
+.boton:active {
+  background-color: black; /* Rojo oscuro */
+  transform: scale(0.98); /* Disminuye el tamaño ligeramente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el texto dentro del botón animado */
+.boton-animado p {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* Estilo para los iconos sociales */
+.social-icons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px;
+  text-decoration: none;
+  color: green; /* Azul bandera */
+  background-color: #ffffff; /* Fondo blanco */
+  border: 2px solid green; /* Borde azul */
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover en los iconos sociales */
+.social-icons a:hover {
+  background-color: green; /* Rojo bandera */
+  color: #ffffff; /* Blanco texto */
+}
+
+/* Estilo de footer */
+footer {
+  background-color: #0038a8; /* Azul bandera */
+  color: #ffffff; /* Blanco */
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 4px solid green; /* Línea roja */
+}

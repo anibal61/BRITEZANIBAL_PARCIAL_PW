@@ -1,0 +1,214 @@
+/* Estilo general para el cuerpo */
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fondo suave */
+  color: #333;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #005f56; /* Verde esmeralda, para representar la frescura y el fútbol */
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #f7f7f7; /* Color blanco suave */
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+nav a:hover {
+  color: #ffbb33; /* Amarillo dorado, evocando la pasión y el fútbol */
+  border-bottom: 3px solid #ffbb33;
+}
+
+/* Estilo para los encabezados */
+h1, .seccion-titulo {
+  color: #005f56;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: bounceIn 1s ease-out; /* Animación de rebote */
+}
+
+/* Efecto de subrayado en los encabezados */
+h1::after, .seccion-titulo::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #ffbb33;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: underlineEffect 1s ease-out;
+}
+
+/* Animación para el efecto de rebote */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animación para el subrayado */
+@keyframes underlineEffect {
+  from {
+    width: 0;
+    background-color: transparent;
+  }
+  to {
+    width: 80px;
+    background-color: #ffbb33;
+  }
+}
+
+/* Animación de rebote al hacer hover sobre subtítulos */
+@keyframes bounceHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilo para los subtítulos en los posts */
+h3 {
+  color: #005f56;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Para aplicar la animación suavemente */
+}
+
+/* Efecto de rebote al pasar el ratón sobre los subtítulos */
+h3:hover {
+  animation: bounceHover 0.6s ease-out;
+}
+
+/* Estilo para las secciones */
+.seccion {
+  margin: 40px 0;
+  padding: 0 20px;
+  color: #444;
+}
+
+/* Estilo para el post */
+.post {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para las imágenes dentro del post */
+.post img {
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.post:hover img {
+  transform: scale(1.1);
+}
+
+/* Estilo para el enlace "Leer más" */
+.leer-mas {
+  color: #005f56;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.leer-mas:hover {
+  color: #ffbb33;
+  border-bottom: 2px solid #ffbb33;
+}
+
+/* Animación suave para los posts al aparecer */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post {
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #005f56; /* Verde esmeralda */
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffbb33; /* Amarillo dorado */
+  transform: scale(1.05);
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #005f56; /* Verde esmeralda */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}

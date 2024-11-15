@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Perfil de Derlis González</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pagina1.html">Perfil</a>
+    <a href="pagina2.html">Portafolio</a>
+    <a href="pagina3.html">Blog</a>
+    <a href="pagina4.html">Estadísticas</a>
+    <a href="pagina5.html">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="main">
+    <h1>Bienvenido al Perfil de Derlis González</h1>
+    <p>Descubre más sobre su trayectoria profesional, logros y momentos destacados en el fútbol paraguayo e internacional.</p>
+
+    <!-- Botones animados con breve descripción -->
+    <section class="botones">
+      <div class="boton-animado">
+        <a href="pagina1.html" class="boton">Perfil Profesional</a>
+        <p>Conoce su historia, formación y habilidades dentro y fuera del campo.</p>
+      </div>
+      <div class="boton-animado">
+        <a href="pagina2.html" class="boton">Trayectoria ⚽</a>
+        <p>Explora los equipos y competiciones en los que ha dejado su huella.</p>
+      </div>
+      <div class="boton-animado">
+        <a href="pagina3.html" class="boton">Galeria</a>
+        <p>Consulta datos sobre sus goles, asistencias y participaciones.</p>
+      </div>
+      <div class="boton-animado">
+        <a href="pagina4.html" class="boton">Estadísticas</a>
+        <p>Revisa las imágenes más icónicas de su carrera deportiva.</p>
+      </div>
+      <div class="boton-animado">
+        <a href="pagina5.html" class="boton">Contacto</a>
+        <p>Conéctate y descubre cómo seguir de cerca sus actividades.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Desarrollado por Anibal Britez - <span id="fecha"></span></p>
+  </footer>
+
+  <script>
+    // Script para actualizar la fecha automáticamente
+    const fechaElement = document.getElementById("fecha");
+    const fechaActual = new Date().toLocaleDateString('es-ES');
+    fechaElement.textContent = fechaActual;
+  </script>
+
+</body>
+</html>

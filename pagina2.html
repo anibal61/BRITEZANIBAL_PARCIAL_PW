@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes de Julio Enciso</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pagina1.html">Perfil</a>
+    <a href="pagina2.html">Portafolio</a>
+    <a href="pagina3.html">Blog</a>
+    <a href="pagina4.html">Estadísticas</a>
+    <a href="pagina5.html">Contacto</a>
+  </nav>
+<!-- Galería de imágenes -->
+<section class="portafolio">
+  <div class="titulo-contenedor">
+    <h1 class="titulo-animado">Galería de Imágenes de Derlis González</h1>
+  </div>
+  <!-- Caja con animación de ciclo de colores -->
+  <div class="ciclo-colores"></div>
+
+  <div class="galeria">
+    <div class="imagen animacion1">
+      <img src="entrenaiento.jpeg" alt="Entrenamiento de Derlis González">
+      <div class="descripcion">
+        <h3>Entrenamiento</h3>
+        <p>Preparación física de Derlis González para mantenerse en forma.</p>
+      </div>
+    </div>
+    <div class="imagen animacion2">
+      <img src="celebracion.jpeg" alt="Celebración">
+      <div class="descripcion">
+        <h3>Celebración</h3>
+        <p>Derlis González celebrando un gol decisivo en un partido importante.</p>
+      </div>
+    </div>
+    <div class="imagen animacion3">
+      <img src="equipo.jpeg" alt="Trabajo en Equipo">
+      <div class="descripcion">
+        <h3>Trabajo en Equipo</h3>
+        <p>Derlis compartiendo momentos con sus compañeros de equipo.</p>
+      </div>
+    </div>
+    <div class="imagen animacion4">
+      <img src="premio.jpeg" alt="Premio">
+      <div class="descripcion">
+        <h3>Reconocimientos</h3>
+        <p>Derlis González recibiendo premios por su destacada actuación.</p>
+      </div>
+    </div>
+    <div class="imagen animacion5">
+      <img src="recup.jpeg" alt="Recuperación">
+      <div class="descripcion">
+        <h3>Recuperación</h3>
+        <p>Volviendo más fuerte después de superar una lesión.</p>
+      </div>
+    </div>
+    <div class="imagen animacion6">
+      <img src="paraguay.jpeg" alt="Selección Paraguaya">
+      <div class="descripcion">
+        <h3>Selección Paraguaya</h3>
+        <p>Derlis representando a Paraguay en un torneo internacional.</p>
+      </div>
+    </div>
+    <div class="imagen animacion7">
+      <img src="prensa.jpeg" alt="Conferencia de Prensa">
+      <div class="descripcion">
+        <h3>Conferencia de Prensa</h3>
+        <p>Hablando sobre sus experiencias y logros en el fútbol.</p>
+      </div>
+    </div>
+    <div class="imagen animacion8">
+      <img src="familia.jpeg" alt="Celebración de Gol">
+      <div class="descripcion">
+        <h3>Familia</h3>
+        <p>Derlis González pasando un dia en Familia.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Desarrollado por Anibal Britez - <span id="fecha"></span></p>
+</footer>
+
+<script>
+  const fechaElement = document.getElementById("fecha");
+  const fechaActual = new Date().toLocaleDateString('es-ES');
+  fechaElement.textContent = fechaActual;
+</script>

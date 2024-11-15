@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Julio Enciso</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pagina1.html">Perfil</a>
+    <a href="pagina2.html">Portafolio</a>
+    <a href="pagina3.html">Blog</a>
+    <a href="pagina4.html">Estadísticas</a>
+    <a href="pagina5.html">Contacto</a>
+  </nav>
+
+  <!-- Perfil del deportista -->
+<section class="perfil">
+  <h1 onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" style="background-color: blueviolet; color: white; width: 400px; border-radius: 25px;">
+    Perfil de Derlis González
+  </h1>
+  <p class="texto-giratorio">
+    Biografía
+  </p>
+
+   <p> Futbolista paraguayo reconocido por su velocidad, habilidad en el regate y versatilidad en ataque. Ha representado a Paraguay en competiciones internacionales y ha jugado en equipos destacados en América y Europa. Derlis es considerado uno de los jugadores más habilidosos de su generación.
+  </p>
+
+  <h2 onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" style="background-color: gray; color: white; width: 100px; border-radius: 25px;">
+    Carrera
+  </h2>
+  
+  <!-- Tabla de la carrera -->
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+    <thead>
+      <tr style="background-color: grey; color: white; text-align: left;">
+        <th style="padding: 12px 15px;">Año</th>
+        <th style="padding: 12px 15px;">Equipo</th>
+        <th style="padding: 12px 15px;">Logro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px 15px;">2013</td>
+        <td style="padding: 12px 15px;">Rubio Ñu</td>
+        <td style="padding: 12px 15px;">Debut profesional</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px 15px;">2014</td>
+        <td style="padding: 12px 15px;">Club Olimpia</td>
+        <td style="padding: 12px 15px;">Jugador destacado en Paraguay</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px 15px;">2015</td>
+        <td style="padding: 12px 15px;">FC Basel</td>
+        <td style="padding: 12px 15px;">Campeón de la Superliga Suiza</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px 15px;">2017</td>
+        <td style="padding: 12px 15px;">Dynamo Kiev</td>
+        <td style="padding: 12px 15px;">Campeón de la Copa de Ucrania</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px 15px;">2019</td>
+        <td style="padding: 12px 15px;">Club Olimpia</td>
+        <td style="padding: 12px 15px;">Regreso y campeón con Olimpia</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 15px;">2024</td>
+        <td style="padding: 12px 15px;">Paraguay</td>
+        <td style="padding: 12px 15px;">Participación en clasificatorias mundialistas</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <p>Desarrollado por Anibal Britez - <span id="fecha"></span></p>
+</footer>
+
+<script>
+  // Script para actualizar la fecha automáticamente
+  const fechaElement = document.getElementById("fecha");
+  const fechaActual = new Date().toLocaleDateString('es-ES');
+  fechaElement.textContent = fechaActual;
+</script>
